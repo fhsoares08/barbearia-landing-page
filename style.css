@@ -1,0 +1,243 @@
+:root {
+    --primary: #010440;
+    --secondary: #1c2f59;
+    --gold: #c8a96a;
+    --light: #f2f2f2;
+    --white: #ffffff;
+    --text: #333333;
+}
+
+body {
+    padding-top: 88px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 100px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 88px;
+    box-shadow: 0px 1px 5px var(--primary);
+    background: linear-gradient(to right, var(--primary), var(--secondary));
+    z-index: 9999;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--gold);
+}
+
+.navbar ul.logo {
+    display: flex;
+    list-style: none;
+    justify-content: flex-start;
+    height: center;
+}
+
+.navbar ul.menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 40px;
+    justify-content: flex-end;
+    margin-right: 100px;
+}
+
+.menu a:not(.btn-agendar):hover {
+    color: white;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+.btn-agendar {
+    padding: 3px 20px;
+    border: 1px solid var(--gold);
+    border-radius: 5px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.btn-agendar:hover {
+    text-decoration: none;
+    background: #010440;
+    color: white;
+    border: 1px solid white;
+}
+
+.home {
+    height: 660px;
+    background-image:
+        linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url("img/barbearia-home.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.home-text {
+    color: var(--gold);
+    max-width: 500px;
+    margin-left: 120px;
+}
+
+.home-text h1 {
+    font-size: 56px;
+    margin-bottom: 10px;
+}
+
+.home-text p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.btn-agendar-home {
+    border: 2px solid var(--gold);
+    padding: 12px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: var(--gold);
+    transition: 0.3s;
+    margin-left: 80px;
+}
+
+.btn-agendar-home:hover {
+    text-decoration: none;
+    background: #010440;
+    color: white;
+    border: 1px solid white;
+}
+
+.servicos {
+    text-align: center;
+    background: white;
+}
+
+.servicos h2 {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.servicos p {
+    color: #777;
+    margin-bottom: 40px;
+}
+
+.servicos ul,
+.servicos-lista {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.card {
+    background-image: url("img/pattern-barbearia.png");
+    background-size: 240px;
+    background-repeat: repeat;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    width: 260px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.card img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+}
+
+.card h3 {
+    padding: 15px;
+    font-size: 18px;
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.titulo::before,
+.titulo::after {
+    content: "";
+    flex: 1;
+    height: 2px;
+    background: linear-gradient(to right, #c8a96a, transparent);
+}
+
+.titulo::before {
+    background: linear-gradient(to left, #c8a96a, transparent);
+}
+
+.contato {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.contato-info {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 40px;
+}
+
+.contato-item h3 {
+    margin-bottom: 10px;
+    color: var(--primary);
+}
+
+.contato-item a {
+    color: var(--gold);
+    text-decoration: none;
+}
+
+.contato-item a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    background: linear-gradient(to right, var(--primary), var(--secondary));
+    color: var(--gold);
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 60px;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+.footer .copy {
+    font-size: 14px;
+    opacity: 0.8;
+}
